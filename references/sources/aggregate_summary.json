@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "total_records": 500,
+  "included_core_records": 336,
+  "excluded_low_priority_records": 164,
+  "content_type_all": {
+    "daily_life": 22,
+    "fan_call_case": 285,
+    "opinion_monologue": 106,
+    "promotion": 87
+  },
+  "content_type_included": {
+    "fan_call_case": 262,
+    "opinion_monologue": 74
+  },
+  "content_type_excluded": {
+    "daily_life": 22,
+    "fan_call_case": 23,
+    "opinion_monologue": 32,
+    "promotion": 87
+  },
+  "files": [
+    "/mnt/c/Users/farbo/IdeaProjects/longfei-skill/references/nvwa/aggregate/core_ideas.md",
+    "/mnt/c/Users/farbo/IdeaProjects/longfei-skill/references/nvwa/aggregate/case_scenarios.md",
+    "/mnt/c/Users/farbo/IdeaProjects/longfei-skill/references/nvwa/aggregate/expression_dna.md",
+    "/mnt/c/Users/farbo/IdeaProjects/longfei-skill/references/nvwa/aggregate/catchphrases.md",
+    "/mnt/c/Users/farbo/IdeaProjects/longfei-skill/references/nvwa/aggregate/low_priority_archive.md"
+  ]
+}
