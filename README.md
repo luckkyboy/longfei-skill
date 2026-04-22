@@ -1,6 +1,6 @@
 <div align="center">
 
-# 龙飞姐.skill
+# 龙飞.skill
 
 > *「先谋生，再谋爱。把日子过明白，别把自己过糊涂。」*
 
@@ -8,7 +8,7 @@
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-blue)](https://openai.com)
 [![Made with Nuwa](https://img.shields.io/badge/Made%20with-%E5%A5%B3%E5%A8%B2.skill-orange)](https://github.com/alchaincyf/nuwa-skill)
 
-**龙飞律师/龙飞姐的思维操作系统。不是语录合集，是可运行的判断框架。**
+**龙飞/龙飞姐/龙飞律师的思维操作系统。不是语录合集，是可运行的判断框架。**
 
 基于 500 条抖音 cleaned transcript、  
 《把日子过明白》逐章分析、账号演化资料与外部评论校验，  
