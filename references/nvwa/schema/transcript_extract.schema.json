@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nvwa Transcript Extract",
+  "type": "object",
+  "required": [
+    "seq",
+    "title",
+    "aweme_id",
+    "create_time",
+    "source_path",
+    "content_type",
+    "primary_targets",
+    "value_level",
+    "topics",
+    "summary",
+    "core_question",
+    "scenario",
+    "judgment_present",
+    "judgment_summary",
+    "decision_rules",
+    "expression_signals",
+    "representative_quotes",
+    "risk_signals",
+    "anti_patterns",
+    "timeline_signals",
+    "confidence"
+  ],
+  "properties": {
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "aweme_id": {
+      "type": "string"
+    },
+    "create_time": {
+      "type": "string"
+    },
+    "source_path": {
+      "type": "string"
+    },
+    "content_type": {
+      "type": "string",
+      "enum": [
+        "promotion",
+        "daily_life",
+        "opinion_monologue",
+        "fan_call_case"
+      ]
+    },
+    "primary_targets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "02-conversations",
+          "03-expression-dna",
+          "05-decisions",
+          "06-timeline"
+        ]
+      }
+    },
+    "value_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "core_question": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scenario": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "judgment_present": {
+      "type": "boolean"
+    },
+    "judgment_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expression_signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "representative_quotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "anti_patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timeline_signals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "name": "cleaned_md_extraction",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "episode_id": {
+        "type": "string",
+        "description": "从标题、文件名或头部编号提取的主编号，如 008。没有则返回空字符串。"
+      },
+      "title": {
+        "type": "string",
+        "description": "文档标题，优先使用显式标题，不要改写。"
+      },
+      "create_time": {
+        "type": "string",
+        "description": "创建时间或发布时间，保留原格式。没有则返回空字符串。"
+      },
+      "source_path": {
+        "type": "string",
+        "description": "文档中的原始来源路径，保持原样。"
+      },
+      "hook_text": {
+        "type": "string",
+        "description": "主播开场钩子。没有明显钩子则返回空字符串。"
+      },
+      "case_summary": {
+        "type": "string",
+        "description": "来访者/案例主角的背景、冲突和卡点的简要概括。"
+      },
+      "case_constraints": {
+        "type": "array",
+        "description": "影响案例判断的客观限制条件短语数组。",
+        "items": {
+          "type": "string"
+        }
+      },
+      "core_question": {
+        "type": "string",
+        "description": "案例真正想问的问题，用一句话概括。"
+      },
+      "host_reframe": {
+        "type": "string",
+        "description": "主播如何重新定义这个问题。"
+      },
+      "decision_rules": {
+        "type": "array",
+        "description": "主播给出的判断标准、取舍逻辑、评估规则。",
+        "items": {
+          "type": "string"
+        }
+      },
+      "action_rules": {
+        "type": "array",
+        "description": "主播给出的可执行动作建议。",
+        "items": {
+          "type": "string"
+        }
+      },
+      "catchphrases": {
+        "type": "array",
+        "description": "主播在该条内容中的高辨识度措辞。",
+        "items": {
+          "type": "string"
+        }
+      },
+      "style_tags": {
+        "type": "array",
+        "description": "该条内容中的表达风格标签，控制在 3 到 8 个。",
+        "items": {
+          "type": "string"
+        }
+      },
+      "evidence_quotes": {
+        "type": "array",
+        "description": "用于支撑抽取结果的关键短引文，必须来自原文。",
+        "minItems": 0,
+        "maxItems": 8,
+        "items": {
+          "type": "string"
+        }
+      },
+      "timestamp_refs": {
+        "type": "array",
+        "description": "与关键内容相关的明确时间戳引用，例如 00:12-00:18。",
+        "items": {
+          "type": "string"
+        }
+      },
+      "confidence": {
+        "type": "string",
+        "description": "本次抽取的总体置信度。",
+        "enum": ["low", "medium", "high"]
+      }
+    },
+    "required": [
+      "episode_id",
+      "title",
+      "create_time",
+      "source_path",
+      "hook_text",
+      "case_summary",
+      "case_constraints",
+      "core_question",
+      "host_reframe",
+      "decision_rules",
+      "action_rules",
+      "catchphrases",
+      "style_tags",
+      "evidence_quotes",
+      "timestamp_refs",
+      "confidence"
+    ]
+  }
+}
